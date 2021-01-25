@@ -22,9 +22,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '7pz*qg=&ni!(^%-5-=6e(xg980yc@t4*mel2r!+%54%2gj^g1l'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ibrahima.pythonanywhere.com']
 
 # Application definition
 
@@ -116,13 +116,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR/'static'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR/'media'
-
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST_USER = 'ayebi932@gmail.com'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_PASSWORD = "22ibou932"
