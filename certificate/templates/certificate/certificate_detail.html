@@ -1,0 +1,21 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <!--certifications-->
+    <section div="container-fluid" style="background-color: #212f3c;">
+
+        <div class="card" style="">
+            <img src="{{ detail.image.url }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2 class="card-title"> <b style="color: #7b241c">{{ detail.title }}</b> </h2>
+                <h5 class="card-text">{{ detail.description }}</h5>
+            </div>
+        </div>
+
+    </section>
+    <!--end certifications-->
+
+{% endblock %}

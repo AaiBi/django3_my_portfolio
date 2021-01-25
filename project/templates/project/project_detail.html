@@ -1,0 +1,52 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <!--projects-->
+    <section div="container-fluid" style="background-color: #212f3c;">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="card" style="">
+                    <img src="{{ detail.image.url }}" class="card-img-top" alt="..." style="height: 500px">
+                    <div class="card-body">
+                        <h2 class="card-title" align="center" style="margin-top: 50px; margin-bottom: 50px;">
+                            <b style="color: #7b241c;">{{ detail.title }}</b>
+                        </h2>
+                        <h5 class="card-text" style="margin-bottom: 70px;">{{ detail.description }}</h5>
+                        <hr>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <img src="{% static 'portfolio/ibou.jpg' %}" class="img-fluid rounded-circle" style="height:80px">
+                                </div>
+                                <div class="col-sm-9">
+                                    <a href="{% url 'home' %}#about" style="text-decoration:none">
+                                        <h4><b style="color: #7b241c">Ibrahima Ba</b></h4>
+                                    </a>
+                                    <p style="color:black"> Student at ASA College </p>
+                                    <p>My interests include web programming and artificial intelligence.</p>
+                                    <a href="https://github.com/AaiBi" target="_blank" rel="noopener">
+                                        <i class="fab fa-github" style="font-size: 30px; margin-right: 10px;"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/ibrahima-ba-65255a1b3/" target="_blank" rel="noopener">
+                                        <i class="fab fa-linkedin" style="font-size: 30px; margin-right: 10px;"></i>
+                                    </a>
+                                    <a href="/files/manparvesh_resume.pdf">
+                                        <i class="fas fa-file" style="font-size: 30px;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+    </section>
+    <!--end certifications-->
+
+{% endblock %}

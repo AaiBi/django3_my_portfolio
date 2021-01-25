@@ -1,0 +1,143 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="container-fluid" style="color: white;">
+
+        <!--Biograpgy-->
+        <section class="row" style="background-color: #1c2833;" id="about">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4 text-center" style="margin-top: 70px; margin-bottom: 70px;">
+                <img src="{% static 'portfolio/ibou.jpg' %}" class="img-fluid rounded-circle">
+                <h2> <b style="color: #7b241c">Ibrahima Ba</b> </h2>
+                <h4> Student at ASA College </h4>
+                <a href="https://github.com/AaiBi" target="_blank" rel="noopener">
+                    <i class="fab fa-github" style="font-size: 40px; margin-right: 30px;"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ibrahima-ba-65255a1b3/" target="_blank" rel="noopener">
+                    <i class="fab fa-linkedin" style="font-size: 40px; margin-right: 30px;"></i>
+                </a>
+                <a href="/files/manparvesh_resume.pdf">
+                    <i class="fas fa-file" style="font-size: 40px;"></i>
+                </a>
+            </div>
+            <div class="col-sm-6" style="margin-top: 70px; margin-bottom: 70px;">
+                <h1 class="text-center" style="font-size: 50px; color: #7b241c;"> <b>Biography</b> </h1>
+                <h5 class="text-center" style="font-size:30px">
+                    I am currently studying in the Computer Science Department at ASA College New York campus.
+                    Before that I had, in Dakar in Senegal, my license (3 years of university) in computer engineering at the
+                    University of Dakar Bourguiba (UDB).</br>
+                    Previously, I worked at Dem Transfert, which is a small exchange office in Dakar.
+                    I made them a little application that allows them to send and receive money.
+                    The application is not available on the net, I installed it locally on two machines linked
+                    through an internet connection. In addition to my college courses, I do self-study online on
+                    platforms like OpenClassrooms and Udemy mostly using Python technology.</br>
+                    I have skills in full-stack web development (Front and Back-end). I can lead a project from
+                    start to finish, from modeling with the different diagrams to deploying.
+                </h5>
+                <div class="row" style="margin-top: 50px;">
+                    <div class="col-sm-6">
+                        <h1><b style="color: #7b241c">Interests</b></h1>
+                        <ul style="font-size: 20px;">
+                            <li>Software Engineering</li>
+                            <li>Web Development</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <h1><b style="color: #7b241c">Education</b></h1>
+                        <ul style="font-size: 20px;">
+                            <li>
+                                <i class="fas fa-graduation-cap"></i>
+                                AOS in Computer Programming & information technology, 2021 (In progress)
+                                <p style="color: #7b241c">ASA College at New York</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-graduation-cap"></i>
+                                Bachelor's Degree in Computer Science, 2019
+                                <p style="color: #7b241c">University of Dakar Bourguiba at Dakar, Sénégal</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </section>
+        <!--end Biography-->
+
+        <!--SKILLS-->
+        <div id="skills">
+            <section class="row justify-content text-center" style="background-color: #212f3c;">
+            <h1 style="margin-top: 70px; margin-bottom: 70px;"> <b style="font-size: 50px; color: #7b241c;">Skills</b> </h1>
+            <div class="col-sm-3" style="margin-bottom: 70px;">
+                <i class="fab fa-python" style="font-size: 100px;"></i></br>
+                <b style="font-size: 25px">Python</b>
+            </div>
+            <div class="col-sm-3" style="margin-bottom: 70px;">
+                <i class="fab fa-html5" style="font-size: 100px;"></i></br>
+                <b style="font-size: 25px">HTML5</b>
+            </div>
+            <div class="col-sm-3" style="margin-bottom: 70px;">
+                <i class="fab fa-css3" style="font-size: 100px;"></i></br>
+                <b style="font-size: 25px">CSS3</b>
+            </div>
+            <div class="col-sm-3" style="margin-bottom: 70px;">
+                <i class="fab fa-bootstrap" style="font-size: 100px;"></i></br>
+                <b style="font-size: 25px">Bootstrap</b>
+            </div>
+        </section>
+            <section class="row justify-content text-center" style="background-color: #212f3c;">
+            <div class="col-sm-3" style=" margin-bottom: 70px;">
+                <i class="fas fa-database" style="font-size: 100px;"></i></br>
+                <b style="font-size: 25px">MySQL</b>
+            </div>
+            <div class="col-sm-3" style="margin-bottom: 70px;">
+                <i class="fab fa-js" style="font-size: 100px;"></i></br>
+                <b style="font-size: 25px">JavaScript</b>
+            </div>
+            <div class="col-sm-3" style=" margin-bottom: 70px;">
+                <i class="fab fa-php" style="font-size: 100px;"></i></br>
+                <b style="font-size: 25px">PHP</b>
+            </div>
+            <div class="col-sm-3" style=" margin-bottom: 70px;">
+                <b style="font-size: 70px">UML</b>
+            </div>
+        </section>
+        </div>
+        <!--end SKILLS-->
+
+        <!--post-->
+
+        <!--end post-->
+
+        <!--contact-->
+        <section class="row justify-content text-center" id="contact" style="background-color: #1c2833;">
+            <div class="col-sm-4" style="margin-top: 70px; margin-bottom: 70px;">
+                <h1> <b style="font-size: 50px; color: #7b241c;">Contact</b> </h1>
+            </div>
+            <div class="col-sm-8" style="margin-top: 70px; margin-bottom: 70px;">
+                <form name="contact" method="POST" action="">
+                    <div class="form-group form-inline" style="margin-bottom: 30px">
+                        <label class="sr-only" for="inputName">Name</label>
+                        <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" style="background-color: #212f3c" required>
+                    </div>
+                    <div class="form-group form-inline" style="margin-bottom: 30px">
+                        <label class="sr-only" for="inputEmail">Email</label>
+                        <input type="email" name="email" class="form-control w-100" id="inputEmail" placeholder="Email" style="background-color: #212f3c" required>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 30px">
+                        <label class="sr-only" for="inputMessage">Message</label>
+                        <textarea name="message" class="form-control" id="inputMessage" rows="5" placeholder="Message" style="background-color: #212f3c" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary px-3 py-2">Send</button>
+                </form>
+            </div>
+        </section>
+        <!--end contact-->
+
+    </div>
+
+
+
+{% endblock %}

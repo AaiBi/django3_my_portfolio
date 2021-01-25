@@ -1,0 +1,43 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="container-fluid">
+
+        <!--certifications-->
+        <div id="certifications" class="row justify-content-center text-center" style="background-color: #1c2833;">
+
+            <h1 style="margin-top: 70px; margin-bottom: 70px;"> <b style="font-size: 50px; color: #7b241c;">
+                My Certifications ({% if certificates %} {{ certificates.count }} {% endif %})
+            </b> </h1>
+
+            {% for certificate in certificates %}
+
+                <div class="card col-sm-3" style="width: 18rem;  min-height: 470px; margin-bottom: 70px; margin-right: 10px;">
+                    <img src="{{ certificate.image.url }}" class="card-img-top" alt="..." style="height:200px;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: #7b241c;">
+                            <b>{{ certificate.title|truncatechars:50 }}</b>
+                        </h5>
+                        <p class="card-text" style="color: #1c2833;">
+                            {{ certificate.description|truncatechars:120 }}
+                        </p>
+                        <!-- Button trigger modal -->
+                        <a href="{% url 'certificate_detail' certificate.id %}" class="btn btn-primary">
+                            Go somewhere
+                        </a>
+                    </div>
+                </div>
+
+            {% endfor %}
+
+        </div>
+        <!--end certifications-->
+
+    </div>
+
+
+
+{% endblock %}

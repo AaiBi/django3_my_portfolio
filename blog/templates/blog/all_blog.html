@@ -1,0 +1,46 @@
+{% extends 'portfolio/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <div class="container-fluid" style="color: white;">
+
+        <!--certifications-->
+        <section id="certifications" class="row justify-content text-center" style="background-color: #1c2833;">
+
+            <h1 style="margin-top: 70px; margin-bottom: 70px;"> <b style="font-size: 50px; color: #7b241c;">My Posts</b> </h1>
+
+            {% for post in posts %}
+
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8" style="margin-bottom: 50px">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <a href="{% url 'blog_detail' post.id %}" class="card-title" style="color: #7b241c">{{ post.title }}</a>
+                                    <p class="card-text" style="color: #212f3c;">{{ post.description|truncatechars:400 }}</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="{{ post.image.url }}" alt="..." class="img-fluid rounded-circle" style="height:200px">
+                            </div>
+                        </div>
+<!--                        <ul class="list-group list-group-flush">-->
+<!--                            <li class="list-group-item">{{ post.dateC|date:'M j Y H:i' }}</li>-->
+<!--                        </ul>-->
+                    </div>
+                </div>
+                <div class="col-sm-2"></div>
+
+            {% endfor %}
+
+        </section>
+        <!--end certifications-->
+
+    </div>
+
+
+
+{% endblock %}
